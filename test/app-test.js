@@ -1,4 +1,4 @@
-/*globals mocha, chai, describe, it, add, isPalindrome */
+/*globals mocha, chai, describe, it, add, isPalindrome, gcd, lcd */
 (function () {
   'use strict';
 
@@ -38,6 +38,22 @@
 
     it('recognizes non palindrome', function () {
       assert.equal(isPalindrome('foo'), false);
+    });
+  });
+
+  describe("greatest common denominator", function () {
+    it("determines gcd of two numbers", function () {
+      assert.equal(gcd(12, 12), 12);
+      assert.equal(gcd(12, 18), 6);
+      assert.equal(gcd(15, 9), 3);
+      assert.equal(gcd(81, 144), 9);
+    });
+  });
+
+  describe("lowest common denominator", function () {
+    it("determines lcd of two numbers", function () {
+      assert.equal(lcd(12, 18), 36);
+      assert.equal(lcd(3, 4), 12);
     });
   });
 

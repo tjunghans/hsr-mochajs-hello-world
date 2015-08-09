@@ -1,5 +1,5 @@
 {
-  "predef"   : ["window", "document", "$"],
+  "predef"   : ["window", "document"],
   "browser"  : true,
   "indent"   : 2,
   "maxlen"   : 79,
